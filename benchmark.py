@@ -4,6 +4,7 @@ import gc
 import os
 import re
 import selectors
+import shutil
 import subprocess
 import sys
 import time
@@ -15,6 +16,7 @@ import pynvml
 REPORT_TABLES = True
 CSV_OUTPUT_PATH = "./benchmark_results.csv"
 MD_OUTPUT_PATH = "./benchmark_results.md"
+OFFLOAD_TEMP_DIR = "./offload_temp"
 
 # Parse-friendly marker recommended for benchmarked scripts to print:
 #   DENOISE_TIME_S=0.123456
@@ -363,6 +365,9 @@ if __name__ == "__main__":
                 "denoise_s": (None if denoise_s is None else float(denoise_s)),
             }
         )
+
+        shutil.rmtree(OFFLOAD_TEMP_DIR, ignore_errors=True)
+        os.makedirs(OFFLOAD_TEMP_DIR, exist_ok=True)
 
     if REPORT_TABLES:
         _write_markdown(results, MD_OUTPUT_PATH)
