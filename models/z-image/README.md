@@ -1,5 +1,7 @@
 # Z-IMAGE
 
+Here is a table with the benchmarks for this model. You can also download a [csv file](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/benchmark_results.csv) if you want to apply filters to it.
+
 | Script | Peak RAM (GB) | Peak VRAM (GB) | Total Time (s) | Denoise (s) |
 | --- | --- | --- | --- | --- |
 | [base_example.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/scripts/base_example.py) | 10.03 | 24.87 | 12.32 | 3.00 |
