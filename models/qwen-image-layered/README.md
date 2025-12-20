@@ -4,5 +4,5 @@ Here is a table with the benchmarks for this model. You can also download a [csv
 
 | Script | Peak RAM (GB) | Peak VRAM (GB) | Total Time (s) | Denoise (s) |
 | --- | --- | --- | --- | --- |
-| ./models/qwen-image-layered/scripts/base_example.py | OOM | OOM | OOM | OOM |
-| ./models/qwen-image-layered/scripts/bnb-4bit-both_cpu_offload.py | 23.54 | 18.68 | 158.18 | 140.00 |
+| [base_example.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/qwen-image-layered/scripts/base_example.py) | OOM | OOM | OOM | OOM |
+| [bnb-4bit-both_cpu_offload.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/qwen-image-layered/scripts/bnb-4bit-both_cpu_offload.py) | 23.54 | 18.68 | 158.18 | 140.00 |
