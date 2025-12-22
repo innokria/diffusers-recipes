@@ -23,3 +23,4 @@ script,peak_ram_gb,peak_vram_gb,duration_s,denoise_s
 ./models/z-image/scripts/gguf_Q4_K_M_4bit_TE.py,9.984363555908203,12.70703125,11.178271532058716,4.0
 ./models/z-image/scripts/gguf_Q4_K_M_4bit_TE_cpu_offload.py,9.622039794921875,6.41796875,12.058560848236084,5.0
 ./models/z-image/scripts/gguf_Q4_K_M_4bit_TE_leaf_stream_group_offload_record.py,12.408000946044922,7.2578125,12.92479157447815,4.0
+./models/z-image/scripts/lora.py,10.201168060302734,25.052734375,16.960052728652954,4.0
