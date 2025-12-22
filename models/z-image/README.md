@@ -13,6 +13,7 @@ Here is a table with the benchmarks for this model. You can also download a [csv
 | [pipeline_leaf_stream_group_offload_low_mem.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/scripts/pipeline_leaf_stream_group_offload_low_mem.py) | 22.26 | 6.58 | 15.38 | 9.00 |
 | [pipeline_leaf_group_offload.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/scripts/pipeline_leaf_group_offload.py) | 28.45 | 3.66 | 23.46 | 16.00 |
 | [pipeline_block_group_offload_two_blocks.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/scripts/pipeline_block_group_offload_two_blocks.py) | 28.45 | 4.72 | 25.03 | 18.00 |
+| [pipeline_block_group_offload_one_block_stream_record.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/scripts/pipeline_block_group_offload_one_block_stream_record.py) | 42.32 | 9.41 | 15.62 | 3.00 |
 | [pipeline_leaf_stream_group_offload_disk.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/scripts/pipeline_leaf_stream_group_offload_disk.py) | 22.52 | 6.58 | 16.98 | 7.00 |
 | [pipeline_leaf_stream_group_offload_disk_record.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/scripts/pipeline_leaf_stream_group_offload_disk_record.py) | 22.52 | 6.60 | 17.45 | 7.00 |
 | [layerwise_pipeline_leaf_stream_group_offload.py](https://github.com/asomoza/diffusers-recipes/blob/main/models/z-image/scripts/layerwise_pipeline_leaf_stream_group_offload.py) | 26.54 | 8.50 | 14.12 | 3.00 |
