@@ -31,8 +31,8 @@ pipe = LTX2Pipeline.from_pretrained(
 )
 
 if triton_is_available and (torch.cuda.is_available() or torch.xpu.is_available()):
-    transformer = apply_sdnq_options_to_model(pipe.transformer, use_quantized_matmul=True)
-    text_encoder = apply_sdnq_options_to_model(pipe.text_encoder, use_quantized_matmul=True)
+    pipe.transformer = apply_sdnq_options_to_model(pipe.transformer, use_quantized_matmul=True)
+    pipe.text_encoder = apply_sdnq_options_to_model(pipe.text_encoder, use_quantized_matmul=True)
 
 pipe.vae.enable_tiling()
 pipe.enable_model_cpu_offload()
