@@ -10,7 +10,7 @@ pipe.transformer.enable_layerwise_casting(storage_dtype=torch.float8_e4m3fn, com
 pipe.vae.enable_tiling()
 pipe.enable_model_cpu_offload()
 
-prompt = "a fantasy style video of a majestic dragon flying over mountains during sunset"
+prompt = "Cinematic video with professional lighting, shot with a 35mm lens and shallow depth of field. The scene opens on an extreme close-up of a real car license plate reading “DIFFUSERS,” captured with macro focus, rock music kicks in and builds intensity. The setting is an outdoor wet mountain road, surrounded by dark silhouettes of hills, trees, and winding asphalt. The car is a high-performance modern sports car with large performance tires gripping the rain-soaked road. A deep combustion engine growl builds as the car suddenly accelerates forward."
 negative_prompt = "worst quality, inconsistent motion, blurry, jittery, distorted"
 
 frame_rate = 24.0
