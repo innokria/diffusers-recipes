@@ -23,7 +23,7 @@ video, audio = pipe(
     frame_rate=frame_rate,
     num_inference_steps=40,
     guidance_scale=4.0,
-    generator=torch.Generator("cuda").manual_seed(0),
+    generator=torch.Generator("cuda").manual_seed(42),
     output_type="np",
     return_dict=False,
 )
